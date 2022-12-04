@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <!-- <link rel="manifest" href="favicon_io/site.webmanifest"> -->
+    <!-- favicon -->
+
+    <!-- jq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jq -->
+
+    <title>Coffe Machine</title>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="coffeMachine">
+            <div class="coffeMachine__menu">
+                <div class="menu__startBtn menu_btn">
+                    <img class="menu_btn__icon menu_btn__icon1" src="img/ico1.png" alt="">
+                </div>
+
+                <div class="menu_screen">
+                    <div class="menu_screen_choose sizes">
+                    <div class="coffe_holder drink_holder">
+                        <img src="img/coffe.png" alt="">
+                        <span>Coffe</span>
+                    </div>
+                    <div class="tea_holder drink_holder">
+                        <img src="img/tea.png" alt="">
+                        <span>Tea</span>
+                    </div>
+                    </div>
+
+                    <div class="startNotification_menu sizes">
+                        <span class="startNotification">Press start!</span>
+                    </div>
+
+                    <div class="coffe_menu sizes">
+                        <div class="menu_row">
+                            <img class="arrowImg" src="img/arr.png" alt="">
+                        </div>
+                        <div class="menu_row">
+                            <span class="drinkOptions" id="0">Americano</span>
+                            <span class="drinkOptions" id="1">Latte</span>
+                        </div>
+                        <div class="menu_row">
+                            <span class="drinkOptions" id="2">Hot choco</span>
+                            <span class="drinkOptions" id="3">Expresso</span>
+                        </div>
+                    </div>
+
+                    <div class="tea_menu sizes">
+                        <div class="menu_row">
+                            <img class="arrowImg" src="img/arr.png" alt="">
+                        </div>
+                        <div class="menu_row">
+                            <span class="drinkOptions" id="4">Dark tea</span>
+                            <span class="drinkOptions" id="5">Green tea</span>
+                        </div>
+                        <div class="menu_row">
+                            <span class="drinkOptions" id="6">Fruit tea</span>
+                            <span class="drinkOptions" id="7">Tea + milk</span>
+                        </div>
+                    </div>
+
+                    <div class="progress_menu sizes">
+                        <div class="menu_row">
+                            <span>In process...</span> <span class="percents__span"></span>
+                        </div>
+                        <div class="menu_row">
+                            <div class="progressBar">
+                                <div class="progressBar_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu__pauseBtn menu_btn">
+                    <img class="menu_btn__icon menu_btn__icon2" src="img/i.png" alt="">
+                </div>
+            </div>
+            <div class="coffeMachine_row">
+                <div class="coffeMachine_row__holder">
+                    <div class="btn_addMilk btn_add">
+                        <div class="plusImg"></div>
+                    </div>
+                <div class="milkTank liquidsTanks">
+                    <div class="liquidTank__glass"></div>
+                    <div class="milkAmount liquids"></div>
+                </div>
+                </div>
+                <img class="cupSteam" src="img/aroma.png" alt="">
+                <img class="cupImg" src="img/cup.png" alt="">
+                <div class="fluidFlow"></div>
+                <div class="coffeMachine_row__holder">
+                    <div class="btn_addWater btn_add">
+                        <div class="plusImg"></div>
+                    </div>
+                <div class="waterTank liquidsTanks">
+                    <div class="liquidTank__glass"></div>
+                    <div class="waterAmount liquids"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

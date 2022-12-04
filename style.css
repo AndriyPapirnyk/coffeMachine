@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(img/bcg.jpeg);
+    background-size: cover;
+    overflow: hidden;
+}
+.coffeMachine{
+    width: 610px;
+    height: 682px;
+    background-image: url(img/bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+.coffeMachine__menu{
+    width: 100%;
+    height: 155px;
+    background-color: #fff;
+    border-radius: 5px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.coffeMachine_row{
+    width: 100%;
+    height: 425px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liquidsTanks{
+    width: 165px;
+    height: 320px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+.liquidTank__glass{
+    width: 165px;
+    height: 320px;
+    border-radius: 5px;
+    background: rgba(106, 166, 255, 0.29);
+    z-index: 2;  
+    position: absolute;  
+}
+.liquids{
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.milkAmount{
+    background-color: #fff;
+}
+.waterAmount{
+    background-color: #00a3ff;
+}
+.menu_btn{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.menu_screen{
+    width: 255px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+.menu_btn__icon{
+    width: 20px;
+}
+.menu_btn__icon1{
+    margin-left: 5px;
+}
+.cupImg{
+    width: 160px;
+    margin-top: 240px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    transition: 1s;
+    z-index: 2;
+}
+.coffeMachine_row__holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_add{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.plusImg{
+    width: 25px;
+    height: 25px;
+    background-image: url(img/Group\ 13.png);
+    background-size: cover;
+}
+.drink_holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.drink_holder img{
+    width: 60px;
+}
+.drink_holder span{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+.sizes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.menu_screen_choose{
+    justify-content: space-around;
+    align-items: center;
+}
+.coffe_menu{
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.tea_menu{
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.progress_menu{
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.menu_row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.arrowImg{
+    width: 25px;
+    cursor: pointer;
+}
+.menu_row span{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.menu_row span:hover{
+    color: #0047ff;
+    transition: 0.4s;
+}
+.progressBar{
+    width: 90%;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+.progressBar_bar{
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #0047ff;
+}
+.startNotification_menu{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.fluidFlow{
+    width: 15px;
+    height: 35px;
+    background-color: burlywood;
+    margin-left: 1px;
+    margin-top: -4px;
+}
+.cupSteam{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    transition: 1s;
+}
